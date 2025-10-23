@@ -1,0 +1,2189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta & Favicon -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link href="assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/libs/scrollcue/scrollCue.css" />
+    <link rel="stylesheet" href="assets/fonts/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+
+
+    <!-- Swiper CSS -->
+
+
+    <!-- Color Mode Script -->
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100vw;
+
+        }
+    </style>
+    <title>Accueil</title>
+</head>
+
+<body style="font-family:raleway;">
+    <style>
+    .custom-btn:hover {
+        background-color: #D9FF9C;
+        color: black;
+        padding: 12px;
+        border: none;
+        border: 2px solid #000;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .custom-btn:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+
+    .navbar .navbar-toggler {
+        border: 2px solid #040404;
+        color: var(--bs-dark);
+        font-size: 1.5rem;
+        padding: .25rem .5rem;
+    }
+
+    
+    .navbar-brand img,
+    .offcanvas-header a img {
+        
+        height: 50px;
+        width: auto;
+    }
+
+    /* CRITICAL: Override theme filter that inverts logo to white */
+    .navbar-dark .navbar-brand,
+    .navbar .navbar-brand,
+    .navbar-brand {
+        filter: none !important;
+    }
+
+    /* Ensure logo image keeps its green color */
+    .navbar-brand img {
+    }
+
+    /*NAVBAR RESPONSIVE*/
+    @media (max-width: 768px) {
+        .navbar-brand img,
+        .offcanvas-header a img {
+            filter: #D9FF9C !important;
+        }
+
+        .offcanvas-nav .navbar-nav .dropdown-item {
+            color: #FFFFFF !important;
+        }
+    }
+</style>
+<header>
+    <nav class="navbar navbar-expand-lg w-100" style="background-color:#000000;border:#000000 1px solid;">
+        <div class="container px-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo/logo.svg" alt="Fituring Logo" height="50">
+            </a>
+            <button class="navbar-toggler offcanvas-nav-btn" type="button">
+                <i class="bi bi-list " style='color:#D9FF9C'></i>
+            </button>
+            <div class="offcanvas offcanvas-start offcanvas-nav"
+                style="width: 20rem;background-color:#000000;border:#000000 0px solid;">
+                <div class="offcanvas-header">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.svg" alt="Fituring Logo" height="50">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body pt-0 align-items-center">
+                    <ul class="navbar-nav mx-auto align-items-lg-center">
+                        <li><a class="dropdown-item text-white" href="#">Fituring</a></li>
+                        <li><a class="dropdown-item text-white" href="#fonctionnalites">Fonctionnalités</a></li>
+                        <li><a class="dropdown-item text-white" href="#temoignages">C'est réel</a></li>
+                        <li><a class="dropdown-item text-white" href="#contactez-nous">Contact</a></li>
+                    </ul>
+                    <div class="mt-3 mt-lg-0 d-flex align-items-center">
+                        <a href="#" class="btn btn-primary custom-btn" onclick="scrollToForm()">Essayer Fituring
+                            <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function scrollToForm() {
+            const formSection = document.getElementById('formulaire');
+            if (formSection) {
+                formSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+
+</header>
+
+    <main>
+        <!-- SECTION HÉRO -->
+    <section class="py-5 hero-section-black">
+        <div class="container">
+            <div class="row text-white p-5">
+                <div class="col-md-6  col-sm-7   order-2 order-md-1 hero-content">
+                    
+                    <h6>#FiturinGèreTout | #RejoingnezLaRevolution | #PrennezLeControle</h6>
+                    <p class="mega-title">
+                        <span class="word">Scannez</span>
+                        <span class="word">Commandez </span>
+                        <span class="word">Payez </span>
+                        <span class="word hero-highlight">en 1 clic</span>
+                    </p>
+                    <p class="hero-subtitle">L'appli pour offrir <span class="hero-highlight"> la meilleure expérience client dans votre restaurant !</span> Vos clients commandent, payent et peuvent demander des services en 1 SCAN depuis leur table</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-7 col-sm-7 ">
+                            <div class="phone-input-wrapper">
+                                <input id="phone" type="tel" placeholder="Votre numéro de téléphone" class="form-control">
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-md-5">
+                            <button type="button" id="ctaBtn" class="custom-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Commencer maintenant !</button>
+                        </div>
+                    </div>
+                    <div class="store-buttons mt-4">
+                        <div class="store-btn">
+                            <a href="https://apps.apple.com/fr/app/fituring-business/id6753602289">
+                                <img src="assets/images/landing/appstore.svg"
+                                    alt="Disponible sur l'App Store">
+                            </a>
+                        </div>
+                        <div class="store-btn">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.fituring.partenaire&pcampaignid=web_share">
+                                <img src="assets/images/landing/playstore.svg"
+                                    alt="Disponible sur Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+
+                <div class="col-md-6 col-sm-5 order-1 order-md-2 text-center mt-3 mt-md-0" style="overflow: hidden !important;">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                    <style>
+                        .swiper-navigation {
+                            display: none;
+                        }
+                    </style>
+
+                    <div class="swiper-container swiper h-3" id="swiper-1">
+                        <div class="swiper-wrapper pb-6 mx-auto">
+                            <div class="swiper-slide">
+                                <img  src="assets/images/landing/bgslide0.webp" alt="project"
+                                    class="img-fluid rounded-3" width="800px;"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/landing/bgslide.webp" alt="project"
+                                    class="img-fluid rounded-3" width="800px;"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/landing/bgslide1.webp" alt="project"
+                                    class="img-fluid rounded-3" width="800px;" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background:#000;">
+                    <img src="assets/images/logo/logo.svg" alt=""
+                        style="width:100px; margin-top:30px; margin-left:200px; text-align:center;">
+                    <div class="modal-header">
+
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color:white; text-align:center;">
+                            Plus
+                            qu’une étape, et votre resto
+                            passe au niveau supérieur avec Fituring! 🔥</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form method="POST" action="#" class="needs-validation" novalidate>
+                            
+
+                            <input type="hidden" name="role" id="userRole" value="restaurant">
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="etablissement" id="phone-modal"
+                                    placeholder="Nom de l'établissement">
+                                <div class="invalid-feedback">Veuillez entrer un nom valide.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="rccm" id="phone-modal"
+                                    placeholder="RCCM(si vous en avez)">
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col client-only">
+                                    <input type="text" class="form-control" name="lastname" id="phone-modal"
+                                        placeholder="Nom">
+                                    <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+                                </div>
+                                <div class="col client-only">
+                                    <input type="text" class="form-control" name="firstname" id="phone-modal"
+                                        placeholder="Prenom">
+                                    <div class="invalid-feedback">Veuillez entrer votre prénom.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3" id="parent">
+                                <select name="restaurant" id="select-child" class="form-control select-child" required>
+                                    <option value="" disabled selected>Sélectionner un type d'établissement</option>
+                                    <option value="maquis" class="ch1">Maquis</option>
+                                    <option value="bar">Bar</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="restaurant">Restaurant</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <div class="invalid-feedback">Veuillez entrer le type d'etablissement.
+                                </div>
+                            </div>
+
+                            <div class="mb-3 client-only">
+                                <input id="phoneform" type="tel" name="phoneform" placeholder="Ex: 07 58 27 25 58"
+                                    class="form-control">
+                                <div class="invalid-feedback">Veuillez entrer un email valide.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="ville" id="phone-modal"
+                                    placeholder="Ville">
+                                <div class="invalid-feedback">Veuillez entrer votre ville.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="nombre_de_tables" id="phone-modal"
+                                    placeholder="Nombre de tables à équiper">
+                                <div class="invalid-feedback">Veuillez entrer le nombre de tables à
+                                    équiper.</div>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-finaliser">Finaliser!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- SECTION AVANTAGES -->
+    <section class="advantages-section">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="advantage-item">
+                        <img src="assets/images/logo/symbole-removebg-preview.png"
+                            alt="Ouvrez un compte en 1 Min" class="advantage-icon">
+                        <h4 class="advantage-title">Ouvrez un compte en 1 Min</h4>
+                        <p class="advantage-description" > Créez votre compte et recevez 
+                            immédiatement  30jrs d'essai gratuit
+                            + 10 QR tables offerts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-item">
+                        <img src="assets/images/logo/qrcode-logo.jpg" alt="On vous Équipe dans l'heure"
+                            class="advantage-icon">
+                        <h4 class="advantage-title">On vous Équipe dans l'heure</h4>
+                        <p class="advantage-description">Nous installons tout en 5 min! Vous êtes
+                            prêt à offrir la
+                            meilleure expérience à vos clients en restaurant.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="advantage-item">
+                        <img src="assets/images/logo/symbole2-removebg-preview.png"
+                            alt="Accédez aux services via l'Appli" class="advantage-icon">
+                        <h4 class="advantage-title">Accédez aux services via l'Appli</h4>
+                        <p class="advantage-description">Gestion en temps réel, Commandes/Reservations/Fidélisation, Statistiques et rapports/Gestion du Staff, Menus & Fonds de l'appli Mobile, Tablets, Ordi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 160px; background-color: #000;"></div>
+
+
+    <!-- CARROUSEL PLEIN ÉCRAN -->
+<section class="fullscreen-carousel-section">
+    <div class="fullscreen-carousel-container">
+        <div class="fullscreen-carousel-track-wrapper">
+            <div class="fullscreen-carousel-track">
+                <!-- Slide 1 -->
+                <div class="fullscreen-carousel-slide">
+                    <!-- IMAGE DESKTOP -->
+                    <img src="assets/diapo_image_fituring/appelle server.jpg" alt="Appel Serveur" class="desktop-image">
+                    <!-- IMAGE MOBILE -->
+                    <img src="assets/diapo_image_fituring/mobile/m13.jpg" alt="Appel Serveur" class="mobile-image">
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/fidelisation.jpg" alt="Fidélisation" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m11.jpg" alt="Fidélisation" class="mobile-image">
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/gestion_en_temps_reel.jpg" alt="Gestion en Temps Réel" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m10.jpg" alt="Gestion en Temps Réel" class="mobile-image">
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/menu_digital.jpg" alt="Menu Digital" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m9.jpg" alt="Menu Digital" class="mobile-image">
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel1.jpg" alt="Interface 1" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m8.jpg" alt="Interface 1" class="mobile-image">
+                </div>
+                
+                <!-- Slide 6 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel2.jpg" alt="Interface 2" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m7.jpg" alt="Interface 2" class="mobile-image">
+                </div>
+                
+                <!-- Slide 7 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel3.jpg" alt="Interface 3" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m6.jpg" alt="Interface 3" class="mobile-image">
+                </div>
+                
+                <!-- Slide 8 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel4.jpg" alt="Interface 4" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m5.jpg" alt="Interface 4" class="mobile-image">
+                </div>
+                
+                <!-- Slide 9 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel5_gestion_perso.jpg" alt="Gestion Personnalisée" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m4.jpg" alt="Gestion Personnalisée" class="mobile-image">
+                </div>
+                
+                <!-- Slide 10 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel6_reservation.jpg" alt="Réservation" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m3.jpg" alt="Réservation" class="mobile-image">
+                </div>
+                
+                <!-- Slide 11 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel7_lien_perso.jpg" alt="Lien Personnalisé" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m2.jpg" alt="Lien Personnalisé" class="mobile-image">
+                </div>
+
+                <!-- Slide 12 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel7_lien_perso.jpg" alt="Lien Personnalisé" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m1.jpg" alt="Lien Personnalisé" class="mobile-image">
+                </div>
+
+                <!-- Slide 13 -->
+                <div class="fullscreen-carousel-slide">
+                    <img src="assets/diapo_image_fituring/tel7_lien_perso.jpg" alt="Lien Personnalisé" class="desktop-image">
+                    <img src="assets/diapo_image_fituring/mobile/m13.jpg" alt="Lien Personnalisé" class="mobile-image">
+                </div>
+            </div>
+            <div class="fullscreen-carousel-controls">
+                <div class="fullscreen-carousel-indicators"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+    <div style="text-align: center; background-color: black; padding: 25px 0 30px 0;" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
+        <a href="#" class="cta"
+            style="
+        background-color: #D9FF9C;
+        color: black;
+        text-align: center;
+        padding: 12px 35px; 
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #555; 
+        border-radius: 30px; 
+        font-weight: bold;
+        transition: background-color 0.3s ease, border-color 0.3s ease; 
+    ">Commencer
+            !</a>
+    </div>
+
+    <div style="height: 120px; background-color: #000;"></div>
+
+    <!-- SECTION ANIMATION LOTTIE -->
+    <section class="lottie-animation-section py-5">
+        <div id="lottie-container"></div>
+    </section>
+    <div style="height: 200px;"></div>
+    
+    
+    <!-- SECTION OF CARD HEADER TEXT -->
+    <section class="py-5 advantages-header-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="advantages-header-title">Les avantages dont vous avez toujours rêvé.</h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="advantages-header-text">
+                        Chaque fois qu'un client commande ou paie avec fituring, vous obtenez bien plus que que de l'argent
+                        : plus de temps, plus de pourboires, plus d'avis, plus de données, plus d'analyses.
+                        #FituringGèreTout
+                    </p>
+                    <a href="#" class="btn btn-dark advantages-header-btn">Essayer fituring</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- SECTION CARTES PRODUITS -->
+    <section class="product-cards-section py-5">
+        <div class="container-fluid">
+
+            <div class="product-card card-1">
+                <div class="content-wrapper">
+                    <div class="text-section">
+                        <div class="card-main-title">Plus qu'un simple QR Code</div>
+                        <div class="dynamic-text-wrapper">
+                            <div class="dynamic-text-item active" data-slide-index="0" style="text-align: left">
+                                <h3>Votre menu deviens une vitrine interactive pensée pour vos clients et inventée par vous
+                                </h3>
+                                <p>Offrez une expérience moderne et fluide à vos clients. Au-delà d'un simple menu, vous
+                                    créez une vitrine qui met en avant vos plats et donne à vos clients plus de raisons de
+                                    s'attabler. Plus d'interaction, plus de satisfaction, plus de chiffre d'affaires.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="1">
+                                <h3>Le service, à portée de doigt.</h3>
+                                <p>Appel serveur, demande de l'addition... vos clients appellent un serveur en un clic
+                                    depuis leur table. Plus besoin de chercher du regard, plus de temps perdu. Un service
+                                    rapide, c'est un client satisfait.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="2">
+                                <h3>Commande et paiement à table par vos clients</h3>
+                                <p>Un simple scan, et tout est là : commande, paiement, avis... Vos clients vivent une
+                                    expérience moderne, engageante et sans friction - une raison de plus de revenir vous
+                                    voir.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="3">
+                                <h3>Vos clients paient, sans contraintes et sans attendre</h3>
+                                <p>Fini les attentes interminables. En un scan, vos clients règlent l'addition depuis leur
+                                    table - sans stress, sans délai. Avec Fituring, vous leur offrez la liberté de payer
+                                    comme ils le souhaitent, et vous, vous accélérez la rotation des tables.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-custom-card" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                style="cursor: pointer;">Commencer maintenant</a>
+                            <div class="product-carousel-controls">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel1"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel1"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#imageCarousel1" data-bs-slide-to="0"
+                                        class="active" aria-current="true"></button>
+                                    <button type="button" data-bs-target="#imageCarousel1"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#imageCarousel1"
+                                        data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#imageCarousel1"
+                                        data-bs-slide-to="3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="carousel-section">
+                        <div id="imageCarousel1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img
+                                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop"
+                                        alt="Plat 1"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop"
+                                        alt="Plat 2"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&h=600&fit=crop"
+                                        alt="Plat 3"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop"
+                                        alt="Plat 4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card card-2">
+                <div class="content-wrapper">
+                    <div class="text-section">
+                        <div class="card-main-title">Gestion en temps réel</div>
+                        <div class="dynamic-text-wrapper">
+                            <div class="dynamic-text-item active" data-slide-index="0">
+                                <h3>Chaque commande, suivie comme un battement.</h3>
+                                <p>Les notifications arrivent en direct, les cuisines reçoivent sans délai, vous suivez
+                                    chaque étape en temps réel et vos clients sont notifiés à chaque étape par un message.
+                                    Fiabilité totale, maitrise absolue.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="1">
+                                <h3>La maitrise de votre service sur votre application Fituring Business</h3>
+                                <p>Servez vos commandes, gérez les modifications et suivez chaque paiement depuis un seul
+                                    clic. Chaque action est centralisée - pour une expérience sous contrôle de bout en bout.
+                                </p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="2">
+                                <h3>Modification facile des commandes</h3>
+                                <p>Parce que le détail change tout. Annulez, ajoutez ou remplacez un plat en un instant.
+                                    Avec Fituring, chaque commande reste modifiable jusqu'à la dernière seconde.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="3">
+                                <h3>Une expérience sans frontières.</h3>
+                                <p>Sur place - A emporter - En Livraison. Tout se gère depuis un seul système. Vos clients
+                                    commandent en un clic et vous suivez le rythme du flux, où qu'ils soient. De quoi
+                                    super-scaler tout ce qui se passe dans votre restaurant en direct.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-custom-card" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                style="cursor: pointer;">Commencer maintenant</a>
+                            <div class="product-carousel-controls">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel2"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel2"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#imageCarousel2" data-bs-slide-to="0"
+                                        class="active" aria-current="true"></button>
+                                    <button type="button" data-bs-target="#imageCarousel2"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#imageCarousel2"
+                                        data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#imageCarousel2"
+                                        data-bs-slide-to="3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-section">
+                        <div id="imageCarousel2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img
+                                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop"
+                                        alt="Gestion 1"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=600&fit=crop"
+                                        alt="Gestion 2"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=600&fit=crop"
+                                        alt="Gestion 3"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop"
+                                        alt="Gestion 4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card card-3">
+                <div class="content-wrapper">
+                    <div class="text-section">
+                        <div class="card-main-title">Une identité pour fidéliser vos clients et votre staff</div>
+                        <div class="dynamic-text-wrapper">
+                            <div class="dynamic-text-item active" data-slide-index="0">
+                                <h3>Connaissez vos clients, faites les revenir.</h3>
+                                <p>Accédez à vos données clients, suivez leurs habitudes et récompensez leur fidélité. Des
+                                    outils conçus pour booster vos ventes, vos campagnes et retenir vos meilleurs clients.
+                                </p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="1">
+                                <h3>Un lien personnalisé pour vos réseaux sociaux</h3>
+                                <p>Votre restaurant est ouvert 24/7 - vos clients pré-commandent. Commandent, réservent et
+                                    vous maintenez le rythme, même en dehors des heures de service. Chaque page compte - et
+                                    nous parlons à vos clients.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="2">
+                                <h3>Pilotez votre équipe en un seul regard.</h3>
+                                <p>Attribuez des accès à votre personnel, suivez leurs performances et simplifiez la
+                                    coordination. Fituring centralise vos opérations pour un service rapide, organisé et
+                                    sans friction pour un staff valorisé.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="3">
+                                <h3>Boostez vos pourboires, sans effort.</h3>
+                                <p>Fituring déroule le parcours de vos clients pour une expérience fluide. Commandes et
+                                    paiement rapides, clients plus satisfaits, plus de pourboires, peu de turn-over et un
+                                    service client au top.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-custom-card" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                style="cursor: pointer;">Commencer maintenant</a>
+                            <div class="product-carousel-controls">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel3"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel3"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#imageCarousel3" data-bs-slide-to="0"
+                                        class="active" aria-current="true"></button>
+                                    <button type="button" data-bs-target="#imageCarousel3"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#imageCarousel3"
+                                        data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#imageCarousel3"
+                                        data-bs-slide-to="3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-section">
+                        <div id="imageCarousel3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img
+                                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                                        alt="Fidélité 1"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop"
+                                        alt="Fidélité 2"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                                        alt="Fidélité 3"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop"
+                                        alt="Fidélité 4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card card-4">
+                <div class="content-wrapper">
+                    <div class="text-section">
+                        <div class="card-main-title">Faites la différence et devenez le Premier #1</div>
+                        <div class="dynamic-text-wrapper">
+                            <div class="dynamic-text-item active" data-slide-index="0">
+                                <h3>La voix de vos clients, au coeur de votre excellence.</h3>
+                                <p>Collectez, analysez et valorisez les avis de vos clients après chaque expérience.
+                                    Fituring transforme leurs retours en atouts: plus de cohésion, plus de visibilité, plus
+                                    d'amélioration continue.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="1">
+                                <h3>Plus un partenaire, un support à chaque instant.</h3>
+                                <p>Notre assistance est disponible 24h/24 pour répondre, guider et optimiser vos
+                                    performances. Avec Fituring, vous n'êtes jamais seul : nous faisons équipe pour offrir,
+                                    ensemble, une expérience client d'exception.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="2">
+                                <h3>Des données qui travaillent pour vous.</h3>
+                                <p>Suivez vos ventes, vos performances et vos tendances en temps réel. Fituring transforme
+                                    vos chiffres en leviers d'action : anticipez, ajustez, progressez.</p>
+                            </div>
+                            <div class="dynamic-text-item" data-slide-index="3">
+                                <h3>Le temps, c'est de l'argent. Gagnez les deux.</h3>
+                                <p>Avec Fituring, générez vos rapports d'activités et clôturez vos caisses en un instant.
+                                    Fini les calculs manuels. Tout est automatique, précis et disponible en temps réel -
+                                    pour que vous puissiez vous concentrer sur l'essentiel. Le Clever.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-custom-card" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                style="cursor: pointer;">Commencer maintenant</a>
+                            <div class="product-carousel-controls">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel4"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel4"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#imageCarousel4" data-bs-slide-to="0"
+                                        class="active" aria-current="true"></button>
+                                    <button type="button" data-bs-target="#imageCarousel4"
+                                        data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#imageCarousel4"
+                                        data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#imageCarousel4"
+                                        data-bs-slide-to="3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-section">
+                        <div id="imageCarousel4" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img
+                                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop"
+                                        alt="Différence 1"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1556742044-59324e27011d?w=800&h=600&fit=crop"
+                                        alt="Différence 2"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop"
+                                        alt="Différence 3"></div>
+                                <div class="carousel-item"><img
+                                        src="https://images.unsplash.com/photo-1556742044-59324e27011d?w=800&h=600&fit=crop"
+                                        alt="Différence 4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DEUX COULEURS -->
+    <section class="two-colors-section">
+        <div class="two-colors-wrapper">
+            <div class="two-colors-box two-colors-box-1">
+                <strong class="two-colors-title">Gagnez en <br> visibilité</strong>
+            </div>
+            <div class="two-colors-box two-colors-box-2">
+                <strong class="two-colors-title">Augmentez votre CA</strong>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 120px; background-color: #000;"></div>
+
+<div id="temoignages" class="temoignages-section">
+    <div class="container">
+        <div class="row text-center stats-row">
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h2 class="stat-number"> <span class="num">+100</span></h2>
+                    <span class="stat-label">Restaurants</span>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h2 class="stat-number" >+1M</h2>
+                    <span class="stat-label" >Clients fidèles</span>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h2 class="stat-number" >+30min</h2>
+                    <span class="stat-label" >Gagnées / table</span>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-item">
+                    <h2 class="stat-number" >+60%</h2>
+                    <span class="stat-label">Chiffre d'Affaires</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="temoignages-footer-title">C'est Réel !</h1>
+</div>
+
+
+    <style>
+        .testimonial-slider {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonial-track {
+            display: flex;
+            animation: scroll-left 30s linear infinite;
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            flex: 0 0 auto;
+            width: 450px;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+
+
+    <div class="testimonial-section-mobile-hide" style="background-color:black; color:white; padding: 60px 0;">
+        <div class=" overflow-hidden">
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+
+                    <!-- Card 1 -->
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    YK
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Avant Fituring, on perdait du temps
+                                        à courir après les serveurs pour
+                                        encaisser.
+                                        Aujourd'hui, avec le Scan & Go, les clients paient directement à table.
+                                        Résultat : plus de rotation, plus de cash, moins de stress. On a gagné en
+                                        efficacité dès la première semaine.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">Yao
+                                        Kouamé</footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    FB
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Ce que j'aime avec Fituring, c'est
+                                        que c'est pensé pour nous. Pas besoin de
+                                        matériel compliqué. Juste un téléphone, un QR code, et on gère tout. En
+                                        plus,
+                                        les stats journalières sont claires, je peux voir combien on a fait en un
+                                        coup
+                                        d'oeil.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Fatou
+                                        Bamba
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    ST
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Fituring nous a permis de mieux
+                                        connaître nos clients. Avant, on servait sans
+                                        savoir. Maintenant, on voit les habitudes de consommation, on peut adapter
+                                        nos
+                                        offres. C'est plus qu'un outil, c'est un partenaire.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Seydou
+                                        T.
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    D
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">J'en avais marre d'attendre qu'on me
+                                        ramène l'addition. Fituring a changé mes
+                                        habitudes. Je scanne, je commande, je paie, je pars. Simple, rapide, sans
+                                        prise
+                                        de tête.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Doris
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    BA
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Avec Fituring, je retrouve tous mes
+                                        tickets, je peux suivre mes dépenses de
+                                        sorties. J'ai compris que je dépensais trop en after (rires), mais au moins
+                                        maintenant je gère.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Brice
+                                        A.
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    I
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">J'ai découvert plein de restos grâce
+                                        à l'app. Et franchement, savoir qu'ils
+                                        utilisent Fituring, ça me rassure. Je sais que mon expérience sera fluide.
+                                    </p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Inès
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    K
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Depuis qu'on a Fituring, je cours
+                                        moins. Les clients commandent seuls, je
+                                        gagne
+                                        du temps pour bien m'occuper d'eux. Moins de stress, plus de tips aussi.
+                                        Tout le
+                                        monde est content.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Kevin
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    S
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Avant, y'avait trop d'erreurs sur
+                                        les additions. Maintenant, tout est
+                                        digital. Je
+                                        ne fais plus d'aller retour inutile, j'assigne les tables direct sur mon
+                                        téléphone.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Sandra
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Avant Fituring, on servait à
+                                        l'aveugle. Aujourd'hui, on sait exactement qui
+                                        revient souvent, ce qu'il aime commander, à quelle heure. On peut enfin
+                                        créer
+                                        une vraie relation, proposer des offres ciblées, envoyer des messages
+                                        personnalisés.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Stéphanie
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    A
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Les données clients, c'est l'or du
+                                        futur. Grâce à Fituring, j'ai accès à une
+                                        base
+                                        complète sans rien demander. Les anniversaires, les plats préférés, les
+                                        retours
+                                        clients… tout est là. J'ai même doublé mon taux de fidélisation sans faire
+                                        plus
+                                        de promos.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Arnaud
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    É
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">J'ai reçu un message personnalisé
+                                        pour mon plat préféré à moitié prix. C'est
+                                        comme si le resto me connaissait. Et je sais que c'est grâce à Fituring. Ce
+                                        genre de truc, c'est ce qui me fait revenir.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Émilie
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    M
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Grâce aux fiches clients
+                                        automatiques, je sais quand un VIP arrive, je
+                                        prépare sa
+                                        table préférée. Le service est plus pro, plus humain. Les gens se sentent
+                                        considérés.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Michel
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    H
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Avant, notre QR code ouvrait un PDF
+                                        lourd, galère à lire pour les clients.
+                                        Avec
+                                        Fituring, les clients ont un vrai menu dynamique, avec photos, mises à jour
+                                        en
+                                        temps réel. Franchement, y'a pas photo. En plus ils peuvent payer
+                                        directement.
+                                    </p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Hamed
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    C
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Le menu interactif de Fituring,
+                                        c'est notre meilleur serveur. Les clients
+                                        commandent seuls, voient les plats en images, choisissent les options
+                                        facilement. Zéro erreur de prise de commande, et en plus c'est stylé.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">
+                                        Clarisse
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    J
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">On a arrêté le menu PDF dès qu'on a
+                                        testé Fituring. Aujourd'hui, je peux
+                                        changer
+                                        les prix, désactiver un plat en rupture, traduire pour les touristes…
+                                        instantanément. J'ai le contrôle total sans appeler un graphiste.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Jean-Paul
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    C
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Quand tu scannes le QR code
+                                        Fituring, t'as pas juste un menu, t'as une
+                                        expérience. Commande, paiement, note du plat, historique... c'est tout un
+                                        univers en un scan.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">Chloé
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    J
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Quand je vais dans un resto sans
+                                        Fituring maintenant, j'ai l'impression de
+                                        revenir à l'époque du Nokia 3310. Trop lent, trop flou. Si t'es pas sur
+                                        Fituring, tu perds déjà des clients comme moi.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Joël
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    I
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Je ne comprends pas comment un resto
+                                        en 2025 peut encore fonctionner sans
+                                        Fituring. Je veux commander vite, payer direct, garder mes tickets. Si je
+                                        vois
+                                        qu'il y a pas Fituring, je change d'endroit. Clairement.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">
+                                        Isabelle
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-white h-100 shadow-sm border-0"
+                            style="background-color: #0E6E5F; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    R
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">On est en Côte d'Ivoire, pas dans
+                                        une série Netflix. On veut de l'efficacité
+                                        locale. Fituring a compris nos besoins. Moi je boycotte les établissements
+                                        qui
+                                        me font perdre 20 min à demander l'addition.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-white-50">
+                                        Rachid
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card mb-4">
+                        <div class="card text-black h-100 shadow-sm border-0"
+                            style="background-color: #D9FF9C; padding: 20px; border-radius: 20px;">
+                            <div class="card-body d-flex flex-row align-items-center p-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 80px; height: 80px; background-color: black; color: white; font-weight: bold; font-size: 20px; flex-shrink: 0;">
+                                    N
+                                </div>
+                                <div>
+                                    <p style="font-size: 1rem; margin-bottom: 0.5rem;">Avec Fituring, tout est fluide : je
+                                        scanne, je commande, je paye. C'est ça
+                                        que je
+                                        veux. Si ton établissement n'a pas Fituring, pose-toi les bonnes questions.
+                                        Parce que moi, je ne reviens pas.</p>
+                                    <footer style="font-weight: bold;" class="blockquote-footer text-black">
+                                        Natacha
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- ... etc -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div style="height:130px;">
+    </div>
+    
+      <style>
+
+    #fonctionnalites {
+      scroll-margin-top: 100px;
+    }
+
+    .video-carousel-section {
+      height: 80vh;
+      width: 100vw;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-carousel-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .video-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .video-item.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+    }
+
+    .video-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #000;
+    }
+
+    /* Ensure poster image displays properly */
+    .video-item video[poster] {
+      object-fit: cover;
+    }
+
+
+    /* Controls and indicators */
+    .carousel-controls,
+    .video-indicators {
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .video-carousel-section.hide-ui .carousel-controls,
+    .video-carousel-section.hide-ui .video-indicators {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .carousel-btn {
+      pointer-events: all;
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .carousel-btn:hover {
+      background: rgba(255, 255, 255, 1);
+      transform: scale(1.1);
+    }
+
+    .carousel-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: #000;
+    }
+
+    .video-indicators {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      z-index: 10;
+    }
+
+    .indicator {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ccc;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .indicator.active {
+      background: #fff;
+      width: 35px;
+      border-radius: 8px;
+    }
+  </style>
+
+
+<section class="video-carousel-section" id="fonctionnalites">
+  <div class="video-carousel-container">
+    <div class="video-wrapper">
+      <div class="video-item active" data-index="0">
+        <video controls autoplay muted loop playsinline preload="auto">
+          <source src="assets/video/video_sur_site.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item" data-index="1">
+        <video controls muted loop playsinline preload="auto">
+          <source src="assets/video/video_site_2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-item" data-index="2">
+        <video controls muted loop playsinline preload="auto">
+          <source src="assets/video/video_site4.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+          </svg>
+        </button>
+        <button class="carousel-btn" id="nextBtn">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="video-indicators">
+      <span class="indicator active" data-index="0"></span>
+      <span class="indicator" data-index="1"></span>
+      <span class="indicator" data-index="2"></span>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let currentIndex = 0;
+    const videoItems = document.querySelectorAll('.video-item');
+    const indicators = document.querySelectorAll('.indicator');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const totalVideos = videoItems.length;
+    const carouselSection = document.querySelector('.video-carousel-section');
+    let hideUITimer;
+
+    function showVideo(index) {
+      videoItems.forEach((item, i) => {
+        const video = item.querySelector('video');
+        if (i === index) {
+          item.classList.add('active');
+          video.play();
+        } else {
+          item.classList.remove('active');
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+      });
+
+      currentIndex = index;
+    }
+
+    function nextVideo() {
+      const newIndex = (currentIndex + 1) % totalVideos;
+      showVideo(newIndex);
+    }
+
+    function prevVideo() {
+      const newIndex = (currentIndex - 1 + totalVideos) % totalVideos;
+      showVideo(newIndex);
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', nextVideo);
+    }
+    if (prevBtn) {
+        prevBtn.addEventListener('click', prevVideo);
+    }
+
+    indicators.forEach((indicator) => {
+      indicator.addEventListener('click', function() {
+        const index = parseInt(this.getAttribute('data-index'));
+        showVideo(index);
+      });
+    });
+
+    if (videoItems.length > 0) {
+        const firstVideo = videoItems[0].querySelector('video');
+        firstVideo.play();
+    }
+
+    // Auto-hide UI logic
+    function showUI() {
+        if (carouselSection) {
+            carouselSection.classList.remove('hide-ui');
+            clearTimeout(hideUITimer);
+            hideUITimer = setTimeout(() => {
+                carouselSection.classList.add('hide-ui');
+            }, 3000);
+        }
+    }
+
+    if (carouselSection) {
+        carouselSection.addEventListener('mousemove', showUI);
+        carouselSection.addEventListener('mouseleave', () => {
+            carouselSection.classList.add('hide-ui');
+        });
+
+        // Initialize UI hide timer
+        showUI();
+    }
+  });
+</script>
+    </main>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
+    #contactez-nous {
+        scroll-margin-top: 100px;
+    }
+
+    .footer-title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 1.1;
+        letter-spacing: -0.99px;
+        color: #000000;
+    }
+
+    .footer-phone-block {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-country {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #000000;
+        white-space: nowrap;
+    }
+
+    .footer-country-code {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 127.38px;
+        letter-spacing: -0.99px;
+        color: #0E6E5F;
+    }
+
+    .footer-phone-number {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 64px;
+        letter-spacing: -0.99px;
+        color: #000000;
+        white-space: nowrap;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .whatsapp-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background-color: #25D366;
+        border-radius: 50%;
+        margin-left: 1rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .whatsapp-icon:hover {
+        background-color: #128C7E;
+        transform: scale(1.1);
+    }
+
+    .whatsapp-icon i {
+        font-size: 48px;
+        color: white;
+    }
+
+    .contactez-title-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .text-footer-down {
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: 900;
+
+    }
+
+    .logo {
+        color: #D9FF9C;
+        height:8vh;
+        margin-bottom: 30px;
+
+    }
+
+    #contact-footer .list-unstyled a.text-reset {
+        color: #BDBDBD;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    #contact-footer .list-unstyled a.text-reset:hover {
+        color: white;
+    }
+
+    .country-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+    }
+
+    .country-flag {
+        width: 100px;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+        .footer-title {
+            font-size: 40px !important;
+        }
+
+        .footer-country-code,
+        .footer-phone-number,
+        .footer-country, .whatsapp-icon {
+            font-size: 20px !important;
+            
+        }
+
+        .footer-phone-number {
+            margin-top: 10px !important;
+            position: relative;
+            bottom:60px;
+            right: 10px;
+        }
+
+        .whatsapp-icon {
+            width: 50px;
+            height: 50px;
+            margin-left: 0.5rem;
+        }
+
+        .Email-icon{
+            width: 50px;
+            height: 50px;
+            margin-left: 0.5rem;
+        }
+
+        .whatsapp-icon i {
+            font-size: 28px;
+        }
+
+        .contactez-title-wrapper {
+            flex-direction: column;
+            align-items: center;
+            text-align:center;
+        }
+
+        .footer-email-block {
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact-footer .list-unstyled a.text-reset {
+            color: white !important;
+        }
+
+        .country-flag {
+            width: 100px;
+        }
+    }
+</style>
+
+<div id="contactez-nous">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="contactez-title-wrapper">
+                    <h2 class="footer-title">Contactez<br>-nous !</h2>
+                   
+                    <a href="https://wa.me/22507131360014" target="_blank" class="whatsapp-icon" title="Contactez-nous sur WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="footer-phone-block">
+                    <div class="footer-country">Côte d'Ivoire</div> <br> 
+                    <div class="footer-country-code">+225</div>
+                    <div class="footer-phone-number">07 131 360 14</div>
+                </div>
+                <div class="footer-email-block" style="margin-top: 20px;">
+                    <a href="mailto:contact@fituring.com" style="text-decoration: none; color: #000; display: flex; align-items: center; gap: 1rem;">
+                        <i class="Email-icon bi bi-envelope" style="font-size: 2rem; color: #0E6E5F;"></i>
+                        <span class="footer-email" style="font-size: 20px;">contact@fituring.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer id="contact-footer" class="pt-7 text-white" style="background-color:#000000;">
+
+
+    <div class="container mt-7 pt-lg-7 pb-4">
+        <div class="row align-items-top">
+            <div class="col-md-6">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo.svg" height="100px" alt="Logo" class="logo"/>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 style="color:#BDBDBD">Social</h4>
+                        <ul class="list-unstyled py-3">
+                            <li style="padding-bottom: 10px;"><a href="#" class="text-reset"><i class="bi bi-instagram"></i> Instagram</a></li>
+                            <li style="padding-bottom: 10px;"><a href="#" class="text-reset"><i class="bi bi-facebook"></i> Facebook</a></li>
+                            <li style="padding-bottom: 10px;"><a href="#" class="text-reset"><i class="bi bi-linkedin"></i> Linkedin</a></li>
+                            <li style="padding-bottom: 10px;"><a href="#" class="text-reset"><i class="bi bi-twitter"></i> Twitter</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 style="color:#BDBDBD">Nous sommes en</h4>
+                        <ul class="list-unstyled py-3">
+                            <!-- <li style="padding-bottom: 10px;"><a href="#" class="text-reset">France</a></li>
+                            <li style="padding-bottom: 10px;"><a href="#" class="text-reset">Sénégal</a></li> -->
+                            <li style="padding-bottom: 10px;">
+                                <a href="#" class="text-reset country-link">
+                                    <img src="assets/images/flag/flag-ivory.png" alt="Drapeau Côte d'Ivoire" class="country-flag">
+                                    <span>Côte d’Ivoire</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                    </div>
+                    <div class="col-12 mt-3 display-5 text-footer-down">
+                        Contactez-nous <br>
+                        Appelez-nous <br>
+                        Support
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lottie Animation
+            lottie.loadAnimation({
+                container: document.getElementById('lottie-container'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'assets/images/landing/animation1.json'
+            });
+
+            // Swiper Hero
+            const swiper = new Swiper('#swiper-1', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+            // SCRIPT POUR LE CARROUSEL PLEIN ÉCRAN
+            const carouselSection = document.querySelector('.fullscreen-carousel-section');
+            if (carouselSection) {
+                const track = carouselSection.querySelector('.fullscreen-carousel-track');
+                const items = carouselSection.querySelectorAll('.fullscreen-carousel-slide');
+                const indicatorsContainer = carouselSection.querySelector('.fullscreen-carousel-indicators');
+
+                if (track && items.length > 0 && indicatorsContainer) {
+                    const itemCount = items.length;
+                    let currentIndex = 0;
+                    let slideInterval;
+                    indicatorsContainer.innerHTML = '';
+                    for (let i = 0; i < itemCount; i++) {
+                        const dot = document.createElement('div');
+                        dot.classList.add('fullscreen-indicator-dot');
+                        dot.addEventListener('click', () => {
+                            goToSlide(i);
+                            resetInterval();
+                        });
+                        indicatorsContainer.appendChild(dot);
+                    }
+                    const indicators = indicatorsContainer.querySelectorAll('.fullscreen-indicator-dot');
+
+                    function updateIndicators() {
+                        indicators.forEach((dot, index) => {
+                            dot.classList.toggle('active', index === currentIndex);
+                        });
+                    }
+
+                    function goToSlide(index) {
+                        if (index < 0 || index >= itemCount) return;
+                        currentIndex = index;
+                        track.style.transform = `translateX(${-currentIndex * 100}%)`;
+                        updateIndicators();
+                    }
+
+                    function showNextImage() {
+                        currentIndex = (currentIndex + 1) % itemCount;
+                        goToSlide(currentIndex);
+                    }
+
+                    function startInterval() {
+                        clearInterval(slideInterval); // Ensure no multiple intervals are running
+                        slideInterval = setInterval(showNextImage, 3000);
+                    }
+
+                    function stopInterval() {
+                        clearInterval(slideInterval);
+                    }
+
+                    function resetInterval() {
+                        stopInterval();
+                        startInterval();
+                    }
+
+                    // Add hover event listeners to each slide
+                    items.forEach(item => {
+                        item.addEventListener('mouseenter', () => {
+                            stopInterval();
+                            indicatorsContainer.classList.add('visible');
+                        });
+                        item.addEventListener('mouseleave', () => {
+                            startInterval();
+                            indicatorsContainer.classList.remove('visible');
+                        });
+                    });
+
+                    goToSlide(0);
+                    startInterval();
+                }
+            }
+
+            // SCRIPT FINAL POUR LA SYNCHRONISATION DES CARTES PRODUITS
+            document.querySelectorAll('.product-card').forEach(card => {
+                const imageCarouselEl = card.querySelector('.carousel-section .carousel');
+
+                if (imageCarouselEl) {
+                    const carouselInstance = new bootstrap.Carousel(imageCarouselEl, {
+                        interval: false, // Disable auto-sliding
+                        ride: false
+                    });
+
+                    // Initial animation for the first slide
+                    const initialActiveText = card.querySelector('.dynamic-text-item.active h3');
+                    if (initialActiveText) {
+                        animateWords(initialActiveText);
+                    }
+
+                    imageCarouselEl.addEventListener('slide.bs.carousel', event => {
+                        const newIndex = event.to;
+
+                        // Hide current text
+                        const currentActiveText = card.querySelector('.dynamic-text-item.active');
+                        if (currentActiveText) {
+                            currentActiveText.classList.remove('active');
+                        }
+
+                        // Show new text and animate its title
+                        const newActiveText = card.querySelector(
+                            `.dynamic-text-item[data-slide-index="${newIndex}"]`);
+                        if (newActiveText) {
+                            newActiveText.classList.add('active');
+                            const titleToAnimate = newActiveText.querySelector('h3');
+                            if (titleToAnimate) {
+                                animateWords(titleToAnimate);
+                            }
+                        }
+
+                        // Update indicators
+                        const indicators = card.querySelectorAll('.carousel-indicators button');
+                        const currentActiveIndicator = card.querySelector(
+                            '.carousel-indicators .active');
+                        if (currentActiveIndicator) {
+                            currentActiveIndicator.classList.remove('active');
+                        }
+                        if (indicators[newIndex]) {
+                            indicators[newIndex].classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            function animateWords(titleElement) {
+                // Use a data attribute to store the original text and prevent re-splitting
+                if (!titleElement.dataset.originalText) {
+                    titleElement.dataset.originalText = titleElement.textContent;
+                }
+
+                const text = titleElement.dataset.originalText.trim().replace(/\s+/g, ' ');
+                const words = text.split(' ');
+                titleElement.innerHTML = ''; // Clear existing text
+
+                words.forEach((word, index) => {
+                    const span = document.createElement('span');
+                    span.className = 'card-word';
+                    span.textContent = word;
+                    span.style.animationDelay = `${index * 0.1}s`;
+                    titleElement.appendChild(span);
+
+                    // Add a space after each word
+                    if (index < words.length - 1) {
+                        titleElement.appendChild(document.createTextNode(' '));
+                    }
+                });
+            }
+
+            // Video Carousel
+            const videoTrack = document.querySelector('.video-carousel-track');
+            const videoSlides = document.querySelectorAll('.video-carousel-slide');
+            const videoDots = document.querySelectorAll('.video-carousel-dot');
+
+            if (videoTrack) {
+                videoTrack.addEventListener('scroll', () => {
+                    const slideWidth = videoSlides[0].offsetWidth;
+                    const scrollLeft = videoTrack.scrollLeft;
+                    const activeIndex = Math.round(scrollLeft / slideWidth);
+
+                    videoDots.forEach((dot, index) => {
+                        if (index === activeIndex) {
+                            dot.classList.add('active');
+                        } else {
+                            dot.classList.remove('active');
+                        }
+                    });
+                });
+            }
+
+            videoDots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const slideIndex = dot.getAttribute('data-slide');
+                    const slideWidth = videoSlides[0].offsetWidth;
+                    videoTrack.scrollTo({
+                        left: slideIndex * slideWidth,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const input = document.querySelector("#phone");
+            const iti = window.intlTelInput(input, {
+                separateDialCode: true,
+                initialCountry: "ci",
+                preferredCountries: ["ci", "fr", "sn", "cm", "gh", "bj"],
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
+            });
+
+            // Met à jour le champ caché dans le modal lors du clic sur le bouton CTA
+            const ctaButton = document.querySelector('.custom-btn[data-bs-target="#staticBackdrop"]');
+            if (ctaButton) {
+                ctaButton.addEventListener('click', function(e) {
+                    // Récupère le numéro complet avec indicatif
+                    const fullPhone = iti.getNumber();
+
+
+                    if (fullPhone && fullPhone.length > 5) {
+                        const phoneModalInput = document.getElementById('phoneform');
+                        if (phoneModalInput) {
+                            phoneModalInput.value = fullPhone;
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- Scroll Top Button -->
+    <div class="btn-scroll-top">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path
+                d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+        </svg>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/libs/headhesive/dist/headhesive.min.js"></script>
+    <script src="assets/js/theme.min.js"></script>
+    <script src="assets/libs/scrollcue/scrollCue.min.js"></script>
+    <script src="assets/js/vendors/scrollcue.js"></script>
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Swiper('#swiper-1', {
+                slidesPerView: 1,
+                spaceBetween: 100,
+                speed: 400,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    480: {
+                        slidesPerView: 1
+                    },
+                    768: {
+                        slidesPerView: 1
+                    },
+                    1024: {
+                        slidesPerView: 1
+                    },
+                },
+            });
+        });
+    </script>
+    <script src="assets/js/vendors/color-modes.js"></script>
+
+    <!-- Analytics & Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8S4MT3EYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtg("config", "G-M8S4MT3EYG");
+    </script>
+    <script type="text/javascript">
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments);
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "kss8za9j58");
+    </script>
+</body>
+
+</html>
+
